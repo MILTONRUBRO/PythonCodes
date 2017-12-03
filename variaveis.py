@@ -28,3 +28,12 @@ print(meu_nome)
 #metodo find
 filosofo = "Penso logo desisto"
 print(filosofo.find("logo", 1))
+
+#encontrar um segundo valor deseja no find
+text = "zip e um compressor de arquivos zip e legal"
+
+primeiro_zip = text.find("zip")
+segundo_zip = text.find("zip", primeiro_zip +1)
+print(segundo_zip)
+
+
