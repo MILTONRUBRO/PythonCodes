@@ -31,3 +31,15 @@ def fatorial(num):
 		return num
 
 print(fatorial(5))
+
+#contagem regressiva do lancamento
+def countdown(num):
+    while(num > 0):
+        print(num)
+        num = num-1
+        
+
+    print("Blastoff!")
+
+
+countdown(3)

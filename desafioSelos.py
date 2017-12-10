@@ -4,7 +4,7 @@ def stamps(numOfStamps):
     p5 = 0
     p2 = 0
     p1 = 0
-    
+
     while(numOfStamps >= 1):
         if(numOfStamps >= 5):
             numOfStamps = numOfStamps - 5
@@ -21,4 +21,4 @@ def stamps(numOfStamps):
                     
     return p5, p2,p1
 
-    print(stamps(29))
+print(stamps(29))
