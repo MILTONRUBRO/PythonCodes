@@ -71,3 +71,45 @@ def median(a, b, c):
         return bigger(a,c)
     else:
         return bigger(a,b)
+
+
+#verificar se primeiro caractere de uma lista de strings é um U 
+def measure_udacity(lista):
+    cont = 0
+    for i in lista:
+        if (i[0] == 'U'):
+            cont = cont+1
+    return cont
+    
+
+
+
+print measure_udacity(['Dave','Sebastian','Katy'])
+#>>> 0
+
+print measure_udacity(['Umika','Umberto'])
+#>>> 2
+
+#funcao pra calcular potencia
+def power(base, exponent):  # Add your parameters here!
+  result = base ** exponent
+  print "%d to the power of %d is %d." % (base, exponent, result)
+
+power(37, 4)  # Add your arguments here!
+
+# funcao que retorna quantidade de dias e horas recebendo determinado inteiro 
+def hours2days(num):
+    
+     
+    dias = 0
+    horas = 0
+     
+    dias = num//24
+    horas = num % 24
+    
+    return dias, horas
+         
+
+print(hours2days(24))
+print(hours2days(25))
+print(hours2days(10000))
